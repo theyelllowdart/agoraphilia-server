@@ -5,6 +5,7 @@ name := "hello-world"
 organization := "com.twitter.finatra.example"
 version := "2.1.4"
 scalaVersion := "2.11.7"
+fork in run := true
 parallelExecution in ThisBuild := false
 
 lazy val versions = new {

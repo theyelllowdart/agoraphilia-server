@@ -23,6 +23,7 @@ object HelloWorldMain extends HelloWorldServer
 
 class HelloWorldServer extends HttpServer {
 
+  adminHttpServer
   override val disableAdminHttpServer = false
 
   override protected def modules: Seq[Module] = Vector(new AdminClient(adminHttpServer))
