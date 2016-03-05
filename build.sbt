@@ -9,7 +9,7 @@ fork in run := true
 parallelExecution in ThisBuild := false
 
 lazy val versions = new {
-  val finatra = "2.1.5-SNAPSHOT"
+  val finatra = "2.1.4"
   val guice = "4.0"
   val logback = "1.0.13"
   val finagleMetrics = "0.0.2"
