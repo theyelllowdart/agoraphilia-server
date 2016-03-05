@@ -1,3 +1,6 @@
+import com.typesafe.sbt.SbtNativePackager._
+
+packageArchetype.java_application
 name := "hello-world"
 organization := "com.twitter.finatra.example"
 version := "2.1.4"
