@@ -1,0 +1,582 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+    <title>Coming Soon &#8211;  IFC Center</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="image_src" href="http://media.ifccenter.com/images/ifcc_facebook_592x299.jpg" />
+    <link rel="alternate" type="application/rss+xml" title="IFC Center RSS Feed" href="http://www.ifccenter.com/feed/" />
+    <link rel="pingback" href="http://www.ifccenter.com/xmlrpc.php" />
+
+    <link rel="stylesheet" href="http://www.ifccenter.com/wp-content/themes/ifcc/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://www.ifccenter.com/wp-content/themes/ifcc/ifcc.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/jquery.tabs.css" type="text/css" media="print, projection, screen" />
+    <link rel='stylesheet' id='thickbox-css'  href='/wp-includes/js/thickbox/thickbox.css?ver=20090514' type='text/css' media='all' />
+    <link rel='stylesheet' id='admin-bar-css'  href='/wp-includes/css/admin-bar.css?ver=20110622' type='text/css' media='all' />
+    <link rel='stylesheet' id='slideshow-gallery-pro-css'  href='/wp-content/plugins/slideshow-gallery-pro/css/gallery-css.php?v&#038;pID=2&#038;resizeimages=Y&#038;width=598&#038;height=299&#038;thumbheight=57&#038;border=1px+solid+%23CCCCCC&#038;background=%23000000&#038;infobackground=%23000000&#038;infocolor=%23FFFFFF&#038;infomin=Y&#038;ver=3.2.1' type='text/css' media='all' />
+    <!-- Additional IE/Win specific style sheet (Conditional Comments) -->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="/css/jquery.tabs-ie.css" type="text/css" media="projection, screen">
+    <![endif]-->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="http://www.ifccenter.com/wp-content/themes/ifcc/ie.css" />
+    <![endif]-->
+
+    <style type="text/css" media="screen">
+        body {
+            background-color:#551607;
+            background-image: url(http://www.ifccenter.com/wp-content/themes/ifcc/images/ifcc_bg_home.jpg); /* ); */
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <script type='text/javascript' src='/wp-includes/js/l10n.js?ver=20101110'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="/jquery/jquery.history_remote.pack.js" type="text/javascript"></script>
+    <script src="/jquery/jquery.tabs.min.js" type="text/javascript"></script>
+    <script src="/jquery/jquery.form.js" type="text/javascript"></script>
+    <script src="/jquery/jquery.validate.min.js" type="text/javascript"></script>
+    <script type='text/javascript' src='/wp-content/plugins/slideshow-gallery-pro/js/gallery.js?ver=1.0'></script>
+    <script type="text/javascript" src="/scripts/swfobject.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script language="javascript">
+        if (((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) && (location.pathname == '/')) {
+            if (document.cookie.indexOf("mobile_redirect=false") == -1) window.location = "/mobile/";
+        }
+
+        $(document).ready(function() {
+            $('#container-7').tabs(0, { fxAutoHeight: true });
+            // $('#myForm').ajaxForm(function() { alert("Thank you for your signing up!"); });
+        });
+        jQuery.validator.addMethod("postalcode", function(postalcode, element) {
+            return this.optional(element) || postalcode.match(/(^\d{5}(-\d{4})?$)|(^[ABCEGHJKLMNPRSTVXYabceghjklmnpstvxy]{1}\d{1}[A-Za-z]{1} ?\d{1}[A-Za-z]{1}\d{1})$/);
+        }, "Please specify a valid postal/zip code");
+
+        $(document).ready(function(){
+            $("#membership_form").validate({
+                ignore: [],
+                rules: {
+                    zip: {postalcode: true},
+                    billing_zip: {postalcode: true},
+                    second_member_zip: {postalcode: true},
+                    // for DOC NYC passes
+                    all_access: {number: true, digits: true},
+                    insider: {number: true, digits: true},
+                    doc_a_thon: {number: true, digits: true},
+                    hiddenRecaptcha: {
+                        required: function() {
+                            if(grecaptcha.getResponse() == '') {
+                                return true;
+                            } else {
+                                return false;
+                            }
+                        }
+                    }
+                }
+            });
+        });
+
+        AC_FL_RunContent = 0;
+    </script>
+
+    <script src="/scripts/AC_RunActiveContent.js" language="javascript" type="text/javascript"></script>
+    <script type="text/javascript" src="/scripts/ifccenter.js"></script>
+
+
+
+    <link rel='stylesheet' id='thickbox-css'  href='http://www.ifccenter.com/wp-includes/js/thickbox/thickbox.css?ver=20090514' type='text/css' media='all' />
+    <link rel='stylesheet' id='ifc-center-teacher-opt-in-shortcode-css'  href='http://www.ifccenter.com/wp-content/plugins/educator-opt-in/assets/css/ifc-center-teacher-opt-in-shortcode.css?ver=3.2.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='ifc-center-group-opt-in-shortcode-css'  href='http://www.ifccenter.com/wp-content/plugins/group-opt-in/assets/css/ifc-center-group-opt-in-shortcode.css?ver=3.2.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='ifc-center-hs-opt-in-shortcode-css'  href='http://www.ifccenter.com/wp-content/plugins/high-school-opt-in/assets/css/ifc-center-hs-opt-in-shortcode.css?ver=3.2.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='ifc-center-event-form-shortcode-css'  href='http://www.ifccenter.com/wp-content/plugins/ifc-center-event-form-shortcode/assets/css/ifc-center-event-form-shortcode.css?ver=3.2.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='slideshow-gallery-pro-css'  href='http://www.ifccenter.com/wp-content/plugins/slideshow-gallery-pro/css/gallery-css.php?v&#038;pID=7&#038;resizeimages=Y&#038;width=598&#038;height=299&#038;thumbheight=57&#038;border=1px+solid+%23CCCCCC&#038;background=%23000000&#038;infobackground=%23000000&#038;infocolor=%23FFFFFF&#038;infomin=Y&#038;ver=3.2.1' type='text/css' media='all' />
+    <script type='text/javascript' src='http://www.ifccenter.com/wp-includes/js/l10n.js?ver=20101110'></script>
+    <script type='text/javascript' src='http://www.ifccenter.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+    <script type='text/javascript' src='http://www.ifccenter.com/wp-content/plugins/slideshow-gallery-pro/js/gallery.js?ver=1.0'></script>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ifccenter.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ifccenter.com/wp-includes/wlwmanifest.xml" />
+    <link rel='index' title='IFC Center' href='http://www.ifccenter.com/' />
+    <link rel='prev' title='Terms of Use Agreement' href='http://www.ifccenter.com/terms/' />
+    <link rel='next' title='News' href='http://www.ifccenter.com/news/' />
+    <link rel='canonical' href='http://www.ifccenter.com/coming-soon/' />
+</head>
+<body>
+
+<div id="page">
+
+
+
+    <div id="header">
+        <a href="/"><img src="http://www.ifccenter.com/wp-content/themes/ifcc/images/ifcc_logo.gif" alt="IFC Center" width="202" height="67" border="0" alt="IFC Center" /></a>
+        <p>323 Sixth Avenue at West Third Street | (212) 924-7771 | <a href="mailto:ifccinfo@ifccenter.com">E-mail Us</a> | <a href="/about/#map">Map &amp; Directions</a></p>
+    </div>
+
+    <div id="content" class="narrowcolumn">
+
+
+        <div id="topNavigation">
+            <p><a href="/expansion">EXPANSION</a> | <a href="/index.php" >NOW PLAYING</a> | <a href="/coming-soon/" class="active">COMING SOON</a> | <a href="/membership/" >MEMBERSHIP</a> | <a href="/about/" >ABOUT US</a> | <a href="/film-school/" >FILM SCHOOL</a></p>
+        </div>
+
+
+        <div id = "coming_soon_main">
+            <h2>COMING SOON</h2>
+
+
+            <div id="coming_soon_box">
+                <div id="coming_soon_tabs">
+                    <div id="navbar2">
+                        <ul>
+                            <li><a href="/coming-soon/?viewmode=special_engagements"class='red'>SPECIAL ENGAGEMENTS</a></li>
+                            <li ><a href="/coming-soon/?viewmode=series_and_events"class='red'>SERIES AND EVENTS</a></li>
+                            <li><a href="/coming-soon/?viewmode=all">ALL FILMS</a></li>
+                        </ul>
+                    </div>
+                </div><br />
+
+                <div class="clearFloats"><br /></div>
+                <div class="wide_listing_left">
+                    <a href="http://www.ifccenter.com/films/the-lovers-and-the-despot/" rel="bookmark" title="Permanent Link to THE LOVERS AND THE DESPOT"><img src="http://media.ifccenter.com/images/films/the-lovers-and-the-despot_285x144.jpg" width="285" height="144" border="0" alt="THE LOVERS AND THE DESPOT" style="padding-bottom: 30px;" /></a>
+                </div>
+
+                <div class = "wide_listing_right">
+                    <h3><a href="http://www.ifccenter.com/films/the-lovers-and-the-despot/" rel="bookmark" title="Permanent Link to THE LOVERS AND THE DESPOT">THE LOVERS AND THE DESPOT</a></h3>
+
+                    <strong>Tuesday, May 10</strong><br />
+
+
+                    Q&amp;A with Rob Boynton, author of <em>The Invitation Only Zone: The True Story of North Korea's Abduction Project</em>!
+
+                    THE LOVERS AND THE DESPOT tells the story of young, ambitious South Korean filmmaker Shin Sang-ok and actress Choi Eun-hee, who met and fell in love in 1950s post-war Korea. In... <a href="http://www.ifccenter.com/films/the-lovers-and-the-despot/" rel="bookmark" title="Read More">more...</a><br />
+                    <br />
+
+
+                    <a href="http://movietickets.com/pre_purchase.asp?house_id=9598&movie_id=223879&rdate=05/10/2016" target="_blank" /><img src="http://www.ifccenter.com/wp-content/themes/ifcc/images/btn_buy_tickets.gif" width="87" height="18" border="0" title="" alt="Buy Tickets" border="0"/></a><br />
+                </div>
+
+                <div class="clearFloats"><br/></div>
+                <div class="clearFloats"><br /></div>
+                <div class="wide_listing_left">
+                    <a href="http://www.ifccenter.com/films/kramer-vs-kramer/" rel="bookmark" title="Permanent Link to Kramer vs. Kramer"><img src="http://media.ifccenter.com/images/films/kramer-vs-kramer_285x144.jpg" width="285" height="144" border="0" alt="Kramer vs. Kramer" style="padding-bottom: 30px;" /></a>
+                </div>
+
+                <div class = "wide_listing_right">
+                    <h3><a href="http://www.ifccenter.com/films/kramer-vs-kramer/" rel="bookmark" title="Permanent Link to Kramer vs. Kramer">Kramer vs. Kramer</a></h3>
+
+                    <strong>Thursday, May 12</strong><br />
+
+
+                    <strong>Director Robert Benton in person for Q&amp;A with Meryl Streep biographer Michael Schulman!</strong>
+
+                    <strong></strong>"KRAMER vs. KRAMER wouldn't be half as good as it is -- half as intriguing and absorbing -- if the movie had taken sides. The movie's about a situation rich in opportunities... <a href="http://www.ifccenter.com/films/kramer-vs-kramer/" rel="bookmark" title="Read More">more...</a><br />
+                    <br />
+
+
+                    <a href="http://movietickets.com/pre_purchase.asp?house_id=9598&movie_id=8628&rdate=05/12/2016" target="_blank" /><img src="http://www.ifccenter.com/wp-content/themes/ifcc/images/btn_buy_tickets.gif" width="87" height="18" border="0" title="" alt="Buy Tickets" border="0"/></a><br />
+                </div>
+
+                <div class="clearFloats"><br/></div>
+                <div class="clearFloats"><br /></div>
+                <div class="wide_listing_left">
+                    <a href="http://www.ifccenter.com/films/fargo-2/" rel="bookmark" title="Permanent Link to Fargo"><img src="http://media.ifccenter.com/images/films/fargo_285x144.jpg" width="285" height="144" border="0" alt="Fargo" style="padding-bottom: 30px;" /></a>
+                </div>
+
+                <div class = "wide_listing_right">
+                    <h3><a href="http://www.ifccenter.com/films/fargo-2/" rel="bookmark" title="Permanent Link to Fargo">Fargo</a></h3>
+
+                    <strong>Friday, May 13 - Saturday, May 14</strong><br />
+
+
+                    <strong>DCP projection</strong>
+
+                    "Car salesman Jerry Lundegaard (Macy) hires low-lifes Carl and Gaear (Buscemi and Stormare) to kidnap his wife, hoping that her wealthy father will pay a ransom from which Jerry can creama share. The abduction goes according to plan, but the kidnappers commit three... <a href="http://www.ifccenter.com/films/fargo-2/" rel="bookmark" title="Read More">more...</a><br />
+                    <br />
+
+
+
+                </div>
+
+                <div class="clearFloats"><br/></div>
+                <div class="clearFloats"><br /></div>
+                <div class="wide_listing_left">
+                    <a href="http://www.ifccenter.com/films/needful-things/" rel="bookmark" title="Permanent Link to Needful Things"><img src="http://media.ifccenter.com/images/films/needful-things_285x144.jpg" width="285" height="144" border="0" alt="Needful Things" style="padding-bottom: 30px;" /></a>
+                </div>
+
+                <div class = "wide_listing_right">
+                    <h3><a href="http://www.ifccenter.com/films/needful-things/" rel="bookmark" title="Permanent Link to Needful Things">Needful Things</a></h3>
+
+                    <strong>Friday, May 13 - Saturday, May 14</strong><br />
+
+
+                    <strong>35mm print</strong>
+
+                    "An exceptionally strong cast adds substance to the facile storyline about a mysterious stranger, Leland Gaunt (von Sydow), who opens the antique shop of the title in Castle Rock, Maine, and, by tapping into the inhabitants' acquisitive desires, sets them at one another's... <a href="http://www.ifccenter.com/films/needful-things/" rel="bookmark" title="Read More">more...</a><br />
+                    <br />
+
+
+                    <a href="http://movietickets.com/pre_purchase.asp?house_id=9598&movie_id=229446&rdate=05/13/2016" target="_blank" /><img src="http://www.ifccenter.com/wp-content/themes/ifcc/images/btn_buy_tickets.gif" width="87" height="18" border="0" title="" alt="Buy Tickets" border="0"/></a><br />
+                </div>
+
+                <div class="clearFloats"><br/></div>
+                <div class="clearFloats"><br /></div>
+                <div class="wide_listing_left">
+                    <a href="http://www.ifccenter.com/films/ace-in-the-hole/" rel="bookmark" title="Permanent Link to ACE IN THE HOLE"><img src="http://media.ifccenter.com/images/films/ace-in-the-hole_285x144.jpg" width="285" height="144" border="0" alt="ACE IN THE HOLE" style="padding-bottom: 30px;" /></a>
+                </div>
+
+                <div class = "wide_listing_right">
+                    <h3><a href="http://www.ifccenter.com/films/ace-in-the-hole/" rel="bookmark" title="Permanent Link to ACE IN THE HOLE">ACE IN THE HOLE</a></h3>
+
+                    <strong>Friday, May 13 - Sunday, May 15</strong><br />
+
+
+                    <strong>DCP projection</strong>
+
+                    <em>Chosen by Harold, floor staff</em>
+
+                    <em>"</em>ACE IN THE HOLE greets the new movie year like a punch in the gut, a kick in the nuts, a bucket of bile flung in the face. Hello, nasty! ... Here is, half a century out of the past, a movie so acidly au courant it... <a href="http://www.ifccenter.com/films/ace-in-the-hole/" rel="bookmark" title="Read More">more...</a><br />
+                    <br />
+
+
+                    <a href="http://movietickets.com/pre_purchase.asp?house_id=9598&movie_id=9750&rdate=05/13/2016" target="_blank" /><img src="http://www.ifccenter.com/wp-content/themes/ifcc/images/btn_buy_tickets.gif" width="87" height="18" border="0" title="" alt="Buy Tickets" border="0"/></a><br />
+                </div>
+
+                <div class="clearFloats"><br/></div>
+                <div class="clearFloats"><br /></div>
+                <div class="wide_listing_left">
+                    <a href="http://www.ifccenter.com/films/pele-birth-of-a-legend/" rel="bookmark" title="Permanent Link to Pelé: Birth of a Legend"><img src="http://media.ifccenter.com/images/films/pele-birth-of-a-legend_285x144.jpg" width="285" height="144" border="0" alt="Pelé: Birth of a Legend" style="padding-bottom: 30px;" /></a>
+                </div>
+
+                <div class = "wide_listing_right">
+                    <h3><a href="http://www.ifccenter.com/films/pele-birth-of-a-legend/" rel="bookmark" title="Permanent Link to Pelé: Birth of a Legend">Pelé: Birth of a Legend</a></h3>
+
+                    <strong>Opens Friday, May 13</strong><br />
+
+
+                    This is the miraculous story of the legendary soccer player’s rise to glory, from young boy to the 17 year-old who scored the winning goal in Brazil’s first ever World Cup victory in 1958. From a life full of disadvantages and an impoverished youth in Brazil, Pelé used his unorthodox yet authentic... <a href="http://www.ifccenter.com/films/pele-birth-of-a-legend/" rel="bookmark" title="Read More">more...</a><br />
+                    <br />
+
+
+
+                </div>
+
+                <div class="clearFloats"><br/></div>
+                <div class="clearFloats"><br /></div>
+                <div class="wide_listing_left">
+                    <a href="http://www.ifccenter.com/films/what-weve-become/" rel="bookmark" title="Permanent Link to WHAT WE&#8217;VE BECOME"><img src="http://media.ifccenter.com/images/films/what-weve-become_285x144.jpg" width="285" height="144" border="0" alt="WHAT WE&#8217;VE BECOME" style="padding-bottom: 30px;" /></a>
+                </div>
+
+                <div class = "wide_listing_right">
+                    <h3><a href="http://www.ifccenter.com/films/what-weve-become/" rel="bookmark" title="Permanent Link to WHAT WE&#8217;VE BECOME">WHAT WE&#8217;VE BECOME</a></h3>
+
+                    <strong>Opens Friday, May 13</strong><br />
+
+
+                    <em>Showtimes announced and tickets on sale Mon May 9 at 6pm</em>
+
+                    The Johansson family—mom, dad, their rebellious teenage son, and young daughter—are looking forward to a quiet summer in their idyllic suburban town. But in the blink of an eye, things go from blissful to berserk when a horrifying... <a href="http://www.ifccenter.com/films/what-weve-become/" rel="bookmark" title="Read More">more...</a><br />
+                    <br />
+
+
+
+                </div>
+
+                <div class="clearFloats"><br/></div>
+            </div>
+        </div>
+
+        <div class = "coming_soon_pagination pagination-bottom">&lt;&lt; Back&nbsp;&nbsp;1 <a href='/coming-soon/?viewmode=all&amp;pagenum=2'>2</a> <a href='/coming-soon/?viewmode=all&amp;pagenum=3'>3</a> <a href='/coming-soon/?viewmode=all&amp;pagenum=4'>4</a> <a href='/coming-soon/?viewmode=all&amp;pagenum=5'>5</a> <a href='/coming-soon/?viewmode=all&amp;pagenum=6'>6</a> &nbsp;&nbsp;<a href='/coming-soon/?viewmode=all&amp;pagenum=2'>Next &gt;&gt;</a>
+        </div>
+
+
+    </div>
+
+    <div id="search">
+        <form method="get" id="searchform" action="http://www.ifccenter.com/">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><input type="text" value=" Search IFC Center" name="s" id="s" onFocus="if(this.value==' Search IFC Center')value='';" onBlur="if(this.value=='')value=' Search IFC Center';" /></td>
+                    <td>&nbsp;&nbsp;</td>
+                    <td><input type="image" src="http://www.ifccenter.com/wp-content/themes/ifcc/images/btn_search.gif" width="62" height="26" border="0" id="searchsubmit" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="sidebar">
+        <div id="container-7" class = "tabshide">
+
+            <ul style = "height:20px;margin-left:10px;">
+                <li id="tab_day_sun" style = "width:44px;"><a href="#day_sun"><span>SUN</span></a></li>
+                <li id="tab_day_mon" style = "width:44px;"><a href="#day_mon"><span>MON</span></a></li>
+                <li id="tab_day_tue" style = "width:44px;"><a href="#day_tue"><span>TUE</span></a></li>
+                <li id="tab_day_wed" style = "width:46px;"><a href="#day_wed"><span>WED</span></a></li>
+                <li id="tab_day_thu" style = "width:55px;"><a href="#day_thu"><span>THU</span></a></li>
+                <li id="tab_day_fri" style = "width:43px;"><a href="#day_fri"><span>FRI</span></a></li>
+                <li id="tab_day_sat" style = "width:44px;"><a href="#day_sat"><span>SAT</span></a></li>
+
+            </ul>
+
+            <div id="day_sun" style = "display:none;">
+                <h4>Sunday, May 8</h4>
+                <ul class="calendarListing">
+
+                    <li><a href = "http://www.ifccenter.com/films/april-and-the-extraordinary-world/">April and the Extraordinary World (Avril et le monde truqué)</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/8/2016" target="_blank" title="Buy Tickets">10:30 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/8/2016" target="_blank" title="Buy Tickets">12:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/8/2016" target="_blank" title="Buy Tickets">5:00 PM</a></li><li><a href = "http://www.ifccenter.com/films/black-narcissus/">Black Narcissus (1947)</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=3849&rdate=5/8/2016" target="_blank" title="Buy Tickets">11:00 AM</a></li><li><a href = "http://www.ifccenter.com/films/born-to-be-blue/">Born to Be Blue</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/8/2016" target="_blank" title="Buy Tickets">2:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/8/2016" target="_blank" title="Buy Tickets">7:15 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/8/2016" target="_blank" title="Buy Tickets">9:50 PM</a></li><li><a href = "http://www.ifccenter.com/films/dheepan/">Dheepan</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/8/2016" target="_blank" title="Buy Tickets">10:50 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/8/2016" target="_blank" title="Buy Tickets">12:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/8/2016" target="_blank" title="Buy Tickets">2:40 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/8/2016" target="_blank" title="Buy Tickets">4:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/8/2016" target="_blank" title="Buy Tickets">7:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/8/2016" target="_blank" title="Buy Tickets">9:55 PM</a></li><li><a href = "http://www.ifccenter.com/films/elstree-1976/">Elstree 1976</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/8/2016" target="_blank" title="Buy Tickets">10:45 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/8/2016" target="_blank" title="Buy Tickets">3:15 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/8/2016" target="_blank" title="Buy Tickets">7:35 PM</a></li><li><a href = "http://www.ifccenter.com/films/mad-tiger/">Mad Tiger</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/8/2016" target="_blank" title="Buy Tickets">1:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/8/2016" target="_blank" title="Buy Tickets">5:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/8/2016" target="_blank" title="Buy Tickets">9:20 PM</a></li><li><a href = "http://www.ifccenter.com/films/the-man-who-knew-infinity-2/">Man Who Knew Infinity, The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/8/2016" target="_blank" title="Buy Tickets">10:40 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/8/2016" target="_blank" title="Buy Tickets">12:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/8/2016" target="_blank" title="Buy Tickets">3:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/8/2016" target="_blank" title="Buy Tickets">5:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/8/2016" target="_blank" title="Buy Tickets">7:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/8/2016" target="_blank" title="Buy Tickets">10:05 PM</a></li><li><a href = "http://www.ifccenter.com/films/tale-of-tales/">Tale of Tales (Il racconto dei racconti), The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/8/2016" target="_blank" title="Buy Tickets">12:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/8/2016" target="_blank" title="Buy Tickets">3:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/8/2016" target="_blank" title="Buy Tickets">6:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/8/2016" target="_blank" title="Buy Tickets">9:25 PM</a></li>			</ul>
+            </div>
+
+            <div id="day_mon" style = "display:none;">
+                <h4>Monday, May 9</h4>
+                <ul class="calendarListing">
+
+                    <li><a href = "http://www.ifccenter.com/films/april-and-the-extraordinary-world/">April and the Extraordinary World (Avril et le monde truqué)</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/9/2016" target="_blank" title="Buy Tickets">10:30 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/9/2016" target="_blank" title="Buy Tickets">12:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/9/2016" target="_blank" title="Buy Tickets">5:00 PM</a></li><li><a href = "http://www.ifccenter.com/films/born-to-be-blue/">Born to Be Blue</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/9/2016" target="_blank" title="Buy Tickets">2:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/9/2016" target="_blank" title="Buy Tickets">7:15 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/9/2016" target="_blank" title="Buy Tickets">9:50 PM</a></li><li><a href = "http://www.ifccenter.com/films/dheepan/">Dheepan</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/9/2016" target="_blank" title="Buy Tickets">10:50 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/9/2016" target="_blank" title="Buy Tickets">12:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/9/2016" target="_blank" title="Buy Tickets">2:40 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/9/2016" target="_blank" title="Buy Tickets">4:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/9/2016" target="_blank" title="Buy Tickets">7:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/9/2016" target="_blank" title="Buy Tickets">9:55 PM</a></li><li><a href = "http://www.ifccenter.com/films/elstree-1976/">Elstree 1976</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/9/2016" target="_blank" title="Buy Tickets">10:45 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/9/2016" target="_blank" title="Buy Tickets">3:15 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/9/2016" target="_blank" title="Buy Tickets">7:35 PM</a></li><li><a href = "http://www.ifccenter.com/films/mad-tiger/">Mad Tiger</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/9/2016" target="_blank" title="Buy Tickets">1:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/9/2016" target="_blank" title="Buy Tickets">5:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/9/2016" target="_blank" title="Buy Tickets">9:20 PM</a></li><li><a href = "http://www.ifccenter.com/films/the-man-who-knew-infinity-2/">Man Who Knew Infinity, The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/9/2016" target="_blank" title="Buy Tickets">10:40 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/9/2016" target="_blank" title="Buy Tickets">12:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/9/2016" target="_blank" title="Buy Tickets">3:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/9/2016" target="_blank" title="Buy Tickets">5:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/9/2016" target="_blank" title="Buy Tickets">7:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/9/2016" target="_blank" title="Buy Tickets">10:05 PM</a></li><li><a href = "http://www.ifccenter.com/films/tale-of-tales/">Tale of Tales (Il racconto dei racconti), The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/9/2016" target="_blank" title="Buy Tickets">12:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/9/2016" target="_blank" title="Buy Tickets">3:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/9/2016" target="_blank" title="Buy Tickets">6:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/9/2016" target="_blank" title="Buy Tickets">9:25 PM</a></li>			</ul>
+            </div>
+
+            <div id="day_tue" style = "display:none;">
+                <h4>Tuesday, May 10</h4>
+                <ul class="calendarListing">
+
+                    <li><a href = "http://www.ifccenter.com/films/april-and-the-extraordinary-world/">April and the Extraordinary World (Avril et le monde truqué)</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/10/2016" target="_blank" title="Buy Tickets">10:30 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/10/2016" target="_blank" title="Buy Tickets">12:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/10/2016" target="_blank" title="Buy Tickets">5:00 PM</a></li><li><a href = "http://www.ifccenter.com/films/born-to-be-blue/">Born to Be Blue</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/10/2016" target="_blank" title="Buy Tickets">2:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/10/2016" target="_blank" title="Buy Tickets">9:50 PM</a></li><li><a href = "http://www.ifccenter.com/films/dheepan/">Dheepan</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/10/2016" target="_blank" title="Buy Tickets">10:50 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/10/2016" target="_blank" title="Buy Tickets">12:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/10/2016" target="_blank" title="Buy Tickets">2:40 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/10/2016" target="_blank" title="Buy Tickets">4:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/10/2016" target="_blank" title="Buy Tickets">7:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/10/2016" target="_blank" title="Buy Tickets">9:55 PM</a></li><li><a href = "http://www.ifccenter.com/films/elstree-1976/">Elstree 1976</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/10/2016" target="_blank" title="Buy Tickets">10:45 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/10/2016" target="_blank" title="Buy Tickets">3:15 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/10/2016" target="_blank" title="Buy Tickets">7:35 PM</a></li><li><a href = "http://www.ifccenter.com/films/the-lovers-and-the-despot/">Lovers and the Despot, The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=223879&rdate=5/10/2016" target="_blank" title="Buy Tickets">7:30 PM</a></li><li><a href = "http://www.ifccenter.com/films/mad-tiger/">Mad Tiger</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/10/2016" target="_blank" title="Buy Tickets">1:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/10/2016" target="_blank" title="Buy Tickets">5:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/10/2016" target="_blank" title="Buy Tickets">9:20 PM</a></li><li><a href = "http://www.ifccenter.com/films/the-man-who-knew-infinity-2/">Man Who Knew Infinity, The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/10/2016" target="_blank" title="Buy Tickets">10:40 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/10/2016" target="_blank" title="Buy Tickets">12:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/10/2016" target="_blank" title="Buy Tickets">3:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/10/2016" target="_blank" title="Buy Tickets">5:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/10/2016" target="_blank" title="Buy Tickets">7:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/10/2016" target="_blank" title="Buy Tickets">10:05 PM</a></li><li><a href = "http://www.ifccenter.com/films/tale-of-tales/">Tale of Tales (Il racconto dei racconti), The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/10/2016" target="_blank" title="Buy Tickets">12:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/10/2016" target="_blank" title="Buy Tickets">3:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/10/2016" target="_blank" title="Buy Tickets">6:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/10/2016" target="_blank" title="Buy Tickets">9:45 PM</a></li>			</ul>
+            </div>
+
+            <div id="day_wed" style = "display:none;">
+                <h4>Wednesday, May 11</h4>
+                <ul class="calendarListing">
+
+                    <li><a href = "http://www.ifccenter.com/films/april-and-the-extraordinary-world/">April and the Extraordinary World (Avril et le monde truqué)</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/11/2016" target="_blank" title="Buy Tickets">10:30 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/11/2016" target="_blank" title="Buy Tickets">12:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/11/2016" target="_blank" title="Buy Tickets">5:00 PM</a></li><li><a href = "http://www.ifccenter.com/films/born-to-be-blue/">Born to Be Blue</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/11/2016" target="_blank" title="Buy Tickets">2:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/11/2016" target="_blank" title="Buy Tickets">7:15 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/11/2016" target="_blank" title="Buy Tickets">9:50 PM</a></li><li><a href = "http://www.ifccenter.com/films/dheepan/">Dheepan</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/11/2016" target="_blank" title="Buy Tickets">10:50 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/11/2016" target="_blank" title="Buy Tickets">12:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/11/2016" target="_blank" title="Buy Tickets">2:40 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/11/2016" target="_blank" title="Buy Tickets">4:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/11/2016" target="_blank" title="Buy Tickets">7:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/11/2016" target="_blank" title="Buy Tickets">9:55 PM</a></li><li><a href = "http://www.ifccenter.com/films/elstree-1976/">Elstree 1976</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/11/2016" target="_blank" title="Buy Tickets">10:45 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/11/2016" target="_blank" title="Buy Tickets">3:15 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/11/2016" target="_blank" title="Buy Tickets">7:35 PM</a></li><li><a href = "http://www.ifccenter.com/films/mad-tiger/">Mad Tiger</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/11/2016" target="_blank" title="Buy Tickets">1:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/11/2016" target="_blank" title="Buy Tickets">5:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/11/2016" target="_blank" title="Buy Tickets">9:20 PM</a></li><li><a href = "http://www.ifccenter.com/films/the-man-who-knew-infinity-2/">Man Who Knew Infinity, The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/11/2016" target="_blank" title="Buy Tickets">10:40 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/11/2016" target="_blank" title="Buy Tickets">12:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/11/2016" target="_blank" title="Buy Tickets">3:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/11/2016" target="_blank" title="Buy Tickets">5:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/11/2016" target="_blank" title="Buy Tickets">7:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/11/2016" target="_blank" title="Buy Tickets">10:05 PM</a></li><li><a href = "http://www.ifccenter.com/films/tale-of-tales/">Tale of Tales (Il racconto dei racconti), The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/11/2016" target="_blank" title="Buy Tickets">12:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/11/2016" target="_blank" title="Buy Tickets">3:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/11/2016" target="_blank" title="Buy Tickets">9:25 PM</a></li>			</ul>
+            </div>
+
+            <div id="day_thu" style = "display:none;">
+                <h4>Thursday, May 12</h4>
+                <ul class="calendarListing">
+
+                    <li><a href = "http://www.ifccenter.com/films/april-and-the-extraordinary-world/">April and the Extraordinary World (Avril et le monde truqué)</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/12/2016" target="_blank" title="Buy Tickets">10:30 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/12/2016" target="_blank" title="Buy Tickets">12:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=204301&rdate=5/12/2016" target="_blank" title="Buy Tickets">5:00 PM</a></li><li><a href = "http://www.ifccenter.com/films/born-to-be-blue/">Born to Be Blue</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/12/2016" target="_blank" title="Buy Tickets">2:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217357&rdate=5/12/2016" target="_blank" title="Buy Tickets">9:50 PM</a></li><li><a href = "http://www.ifccenter.com/films/dheepan/">Dheepan</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/12/2016" target="_blank" title="Buy Tickets">10:50 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/12/2016" target="_blank" title="Buy Tickets">12:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/12/2016" target="_blank" title="Buy Tickets">2:40 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/12/2016" target="_blank" title="Buy Tickets">4:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/12/2016" target="_blank" title="Buy Tickets">7:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208832&rdate=5/12/2016" target="_blank" title="Buy Tickets">9:55 PM</a></li><li><a href = "http://www.ifccenter.com/films/elstree-1976/">Elstree 1976</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/12/2016" target="_blank" title="Buy Tickets">10:45 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/12/2016" target="_blank" title="Buy Tickets">3:15 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=218661&rdate=5/12/2016" target="_blank" title="Buy Tickets">7:35 PM</a></li><li><a href = "http://www.ifccenter.com/films/kramer-vs-kramer/">Kramer vs. Kramer</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=8628&rdate=5/12/2016" target="_blank" title="Buy Tickets">7:30 PM</a></li><li><a href = "http://www.ifccenter.com/films/mad-tiger/">Mad Tiger</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/12/2016" target="_blank" title="Buy Tickets">1:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/12/2016" target="_blank" title="Buy Tickets">5:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=219424&rdate=5/12/2016" target="_blank" title="Buy Tickets">9:20 PM</a></li><li><a href = "http://www.ifccenter.com/films/the-man-who-knew-infinity-2/">Man Who Knew Infinity, The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/12/2016" target="_blank" title="Buy Tickets">10:40 AM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/12/2016" target="_blank" title="Buy Tickets">12:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/12/2016" target="_blank" title="Buy Tickets">3:00 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/12/2016" target="_blank" title="Buy Tickets">5:25 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/12/2016" target="_blank" title="Buy Tickets">7:50 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=217329&rdate=5/12/2016" target="_blank" title="Buy Tickets">10:05 PM</a></li><li><a href = "http://www.ifccenter.com/films/tale-of-tales/">Tale of Tales (Il racconto dei racconti), The</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/12/2016" target="_blank" title="Buy Tickets">12:55 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/12/2016" target="_blank" title="Buy Tickets">3:45 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/12/2016" target="_blank" title="Buy Tickets">6:35 PM</a> | <a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=208835&rdate=5/12/2016" target="_blank" title="Buy Tickets">9:25 PM</a></li>			</ul>
+            </div>
+
+            <div id="day_fri" style = "display:none;">
+                <h4>Friday, May 13</h4>
+                <ul class="calendarListing">
+
+                    <li><a href = "http://www.ifccenter.com/films/ace-in-the-hole/">Ace in the Hole</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=9750&rdate=5/13/2016" target="_blank" title="Buy Tickets">11:00 AM</a></li><li><a href = "http://www.ifccenter.com/films/needful-things/">Needful Things</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=229446&rdate=5/13/2016" target="_blank" title="Buy Tickets">12:00 AM</a></li>			</ul>
+            </div>
+
+            <div id="day_sat" style = "display:none;">
+                <h4>Saturday, May 14</h4>
+                <ul class="calendarListing">
+
+                    <li><a href = "http://www.ifccenter.com/films/ace-in-the-hole/">Ace in the Hole</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=9750&rdate=5/14/2016" target="_blank" title="Buy Tickets">11:00 AM</a></li><li><a href = "http://www.ifccenter.com/films/needful-things/">Needful Things</a><br /><a href="http://www.movietickets.com/pre_purchase.asp?house_id=9598&movie_id=229446&rdate=5/14/2016" target="_blank" title="Buy Tickets">12:00 AM</a></li>			</ul>
+            </div>
+
+        </div><br />
+        <div id="sidebar-stay-updated">
+            <h3>Stay Updated</h3>
+            <div class="sidebar_box_wrapper">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td>
+                            <a href="http://twitter.com/ifccenter"><img src="/wp-content/themes/ifcc/images/logo_twitter.png" alt="" border="0" /></a>
+                            <br/><br/>
+                            <a href="http://twitter.com/ifccenter">Twitter</a>
+                        </td>
+                        <td>
+                            <a href="http://www.facebook.com/pages/New-York-NY/IFC-Center/109383989362"><img src="/wp-content/themes/ifcc/images/logo_facebook.png" alt="" border="0" /></a>
+                            <br/><br/>
+                            <a href="http://www.facebook.com/pages/New-York-NY/IFC-Center/109383989362">Facebook</a>
+                        </td>
+                        <td>
+                            <a href="http://www.ifccenter.com/feed/rss/"><img src="/wp-content/themes/ifcc/images/logo_rss.png" alt="" border="0" /></a>
+                            <br/><br/>
+                            <a href="http://www.ifccenter.com/feed/rss/">RSS</a>
+                        </td>
+                        <td>
+                            <a href="http://eepurl.com/bdCJFv" target="_blank"><img src="/wp-content/themes/ifcc/images/logo_email.png" alt="" border="0" /></a>
+                            <br/><br/>
+                            <a href="http://eepurl.com/bdCJFv" target="_blank">Email Us</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id = "sidebar-news">
+            <h3>IFC Center News </h3>
+
+
+            <p><strong><a href="http://www.ifccenter.com/news/spring-2016-calendars-are-here/" rel="bookmark" title="Permanent Link to Spring 2016 calendars are here!">Spring 2016 calendars are here!</a></strong></p>
+            <p>Stop by our lobby to pick up a copy of our new April-June 2016 calendars, with info on: new releases THE INVITATION, 11 MINUTES, CLASS DIVIDE, ECHO PARK, TALE OF TALES, DHEEPAN, WEINER, CHEVALIER; the brand new STRANGER THAN FICTION SPRING 2016 lineup; Wav&nbsp;&#8230;</p>	<hr />
+
+            <p><a href="/news/">SEE ALL NEWS >></a></p>
+        </div>
+        <div id="sidebar-newsletter">
+            <h3>Sign-up For Newsletter</h3>
+            <div class="sidebar_box_wrapper">
+                <div class="signup-text">
+                    Sign up to receive our weekly newsletter in your inbox and to get our printed calendar in the mail:
+                </div>
+
+
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="//ifccenter.us8.list-manage1.com/subscribe?u=6735c4a130dbcf6b942e0573a&id=b29c3bb6d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+
+                            <div class="mc-field-group">
+                                <input type="email" value="E-mail Address" name="EMAIL" class="required email" id="mce-EMAIL" onFocus="if(this.value=='E-mail Address')value='';" onBlur="if(this.value=='')value=' E-mail Address';">
+                            </div>
+
+                            <div id="mce-responses">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_6735c4a130dbcf6b942e0573a_b29c3bb6d9" tabindex="-1" value=""></div>
+
+                            <input type="image" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" src="http://www.ifccenter.com/wp-content/themes/ifcc/images/submit_black.gif">
+
+
+                        </div>
+                    </form>
+                </div>
+
+                <!--End mc_embed_signup-->
+
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id = "footerLinks">
+	  <span class = "footertop"><a href="/">HOME</a> | <a href="/index.php">NOW PLAYING</a> | <a href="/coming-soon/">COMING SOON</a> | <a href="/membership/">MEMBERSHIP</a>   |   <a href="/about/">ABOUT US</a>
+     </span> <hr />
+            <a href="/privacy/">PRIVACY POLICY</a> | <a href="/cookies/">COOKIES</a> | <a href="/terms/">TERMS OF USE</a> | <a href = "mailto:ifccinfo@ifccenter.com">CONTACT</a> | <a href="/event-hosting/">EVENT HOSTING</a> | <a href = "/about/#map">MAPS &amp; DIRECTIONS</a>
+        </div>
+    </div>
+    <br/><br/>
+    <center>
+        <!-- <a href="http://www.tv5.org/cms/USA/p-13410-s5-z413-lg3-Accueil.htm" target="_blank"><img src="http://www.ifccenter.com/wp-content/themes/ifcc/images/banners/tv5monde_728x90.jpg" width="728" height="90" border="0" alt="Advertisement" style="padding-bottom: 35px"></a><br />-->
+        <!--<a href="https://www.autismspeaks.org/liub" target="_blank">
+            <img src="http://www.ifccenter.com/wp-content/themes/ifcc/images/banners/LIUB-Banner-728-x-90.jpg" width="728" height="90" border="0" alt="Advertisement" style="padding-bottom: 35px">
+        </a>-->
+        <img id="rainbow-lockup" src="http://www.ifccenter.com/wp-content/themes/ifcc/images/AMCN_LogoTrain_Horizontal_BBC_final_bk.png" border="0" width="689" height="52" orgWidth="689" orgHeight="52" usemap="#rainbow_media_bar" alt="" />
+    </center>
+
+    <map name="rainbow_media_bar" id="rainbow_media_bar">
+        <area alt="AMC Networks" title="AMC Networks" href="http://www.amcnetworks.com/" rel="nofollow" shape="rect" coords="1,1,153,55" style="outline:none;" target="_blank" />
+        <area alt="AMC" title="AMC" href="http://www.amc.com/" rel="nofollow" shape="rect" coords="164,9,218,42" style="outline:none;" target="_blank" />
+        <area alt="BBC America" title="BBC America" href="http://www.bbcamerica.com/" rel="nofollow" shape="rect" coords="228,10,276,42" style="outline:none;" target="_blank" />
+        <area alt="IFC" title="IFC" href="http://www.ifc.com/" rel="nofollow" shape="rect" coords="288,11,331,42" style="outline:none;" target="_blank" />
+        <area alt="Sundance TV" title="Sundance TV" href="http://www.sundance.tv/" rel="nofollow" shape="rect" coords="340,11,425,42" style="outline:none;" target="_blank" />
+        <area alt="WE tv" title="WE tv" href="http://www.wetv.com/" rel="nofollow" shape="rect" coords="434,9,470,41" style="outline:none;" target="_blank" />
+        <area alt="IFC Films" title="IFC Films" href="http://www.ifcfilms.com/" rel="nofollow" shape="rect" coords="478,9,573,43" style="outline:none;" target="_blank" />
+        <area alt="AMC Networks International" title="AMC Networks International" rel="nofollow" href="http://www.amcnetworks.com/amcni" shape="rect" coords="580,10,691,44" style="outline:none;" target="_blank" />
+    </map><br /><br/>
+
+    <center style="font-size:12px; color:#000; padding-bottom:20px;">Copyright &copy; 2016 IFC Center LLC. All rights reserved.</center>
+
+</div>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-5080881-1");
+        pageTracker._trackPageview();
+    } catch(err) {}</script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var thickboxL10n = {
+        next: "Next &gt;",
+        prev: "&lt; Prev",
+        image: "Image",
+        of: "of",
+        close: "Close",
+        noiframes: "This feature requires inline frames. You have iframes disabled or your browser does not support them.",
+        loadingAnimation: "http://www.ifccenter.com/wp-includes/js/thickbox/loadingAnimation.gif",
+        closeImage: "http://www.ifccenter.com/wp-includes/js/thickbox/tb-close.png"
+    };
+    try{convertEntities(thickboxL10n);}catch(e){};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://www.ifccenter.com/wp-includes/js/thickbox/thickbox.js?ver=3.1-20110528'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var ifc_center_teacher_opt_in_fields = {
+        first_name: "{&quot;id&quot;:&quot;first_name&quot;,&quot;label&quot;:&quot;First Name&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;Full Name&quot;,&quot;error_msg&quot;:&quot;First name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        last_name: "{&quot;id&quot;:&quot;last_name&quot;,&quot;label&quot;:&quot;Last Name&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Last Name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        phone: "{&quot;id&quot;:&quot;phone&quot;,&quot;label&quot;:&quot;Phone&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;XXX-XXX-XXXX&quot;,&quot;error_msg&quot;:&quot;Phone is required&quot;,&quot;validation_msg&quot;:&quot;Please enter a valid phone number&quot;,&quot;phoneUS&quot;:true,&quot;type&quot;:&quot;tel&quot;,&quot;half&quot;:true,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;description&quot;:false}",
+        email: "{&quot;id&quot;:&quot;email&quot;,&quot;label&quot;:&quot;Email&quot;,&quot;required&quot;:true,&quot;error_msg&quot;:&quot;Email is required&quot;,&quot;validation_msg&quot;:&quot;Please enter a valid email address&quot;,&quot;type&quot;:&quot;email&quot;,&quot;half&quot;:true,&quot;placeholder&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        mailing_one: "{&quot;id&quot;:&quot;mailing_one&quot;,&quot;label&quot;:&quot;Preferred Mailing Address&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;Address Line 1&quot;,&quot;error_msg&quot;:&quot;Address is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        mailing_two: "{&quot;id&quot;:&quot;mailing_two&quot;,&quot;label&quot;:&quot;Address 2nd Line&quot;,&quot;required&quot;:false,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Address Line 2&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        city: "{&quot;id&quot;:&quot;city&quot;,&quot;label&quot;:&quot;City&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;City is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        state: "{&quot;id&quot;:&quot;state&quot;,&quot;label&quot;:&quot;State&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;--State--&quot;,&quot;error_msg&quot;:&quot;State is required&quot;,&quot;type&quot;:&quot;select&quot;,&quot;options&quot;:[&quot;AL&quot;,&quot;AK&quot;,&quot;AS&quot;,&quot;AZ&quot;,&quot;AR&quot;,&quot;CA&quot;,&quot;CO&quot;,&quot;CT&quot;,&quot;DE&quot;,&quot;DC&quot;,&quot;FM&quot;,&quot;FL&quot;,&quot;GA&quot;,&quot;GU&quot;,&quot;HI&quot;,&quot;ID&quot;,&quot;IL&quot;,&quot;IN&quot;,&quot;IA&quot;,&quot;KS&quot;,&quot;KY&quot;,&quot;LA&quot;,&quot;ME&quot;,&quot;MH&quot;,&quot;MD&quot;,&quot;MA&quot;,&quot;MI&quot;,&quot;MN&quot;,&quot;MS&quot;,&quot;MO&quot;,&quot;MT&quot;,&quot;NE&quot;,&quot;NV&quot;,&quot;NH&quot;,&quot;NJ&quot;,&quot;NM&quot;,&quot;NY&quot;,&quot;NC&quot;,&quot;ND&quot;,&quot;MP&quot;,&quot;OH&quot;,&quot;OK&quot;,&quot;OR&quot;,&quot;PW&quot;,&quot;PA&quot;,&quot;PR&quot;,&quot;RI&quot;,&quot;SC&quot;,&quot;SD&quot;,&quot;TN&quot;,&quot;TX&quot;,&quot;UT&quot;,&quot;VT&quot;,&quot;VI&quot;,&quot;VA&quot;,&quot;WA&quot;,&quot;WV&quot;,&quot;WI&quot;,&quot;WY&quot;,&quot;AE&quot;,&quot;AA&quot;,&quot;AP&quot;],&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        zip_code: "{&quot;id&quot;:&quot;zip_code&quot;,&quot;label&quot;:&quot;Zip Code&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Last Name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        school: "{&quot;id&quot;:&quot;school&quot;,&quot;label&quot;:&quot;School&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;School Name&quot;,&quot;error_msg&quot;:&quot;School Name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        current_grade: "{&quot;id&quot;:&quot;current_grade&quot;,&quot;label&quot;:&quot;Grade (Taught)&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Grade Level is required&quot;,&quot;half&quot;:false,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}"
+    };
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://www.ifccenter.com/wp-content/plugins/educator-opt-in/assets/js/ifc-center-teacher-opt-in-shortcode.js?ver=0.1.0'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var ifc_center_group_opt_in_fields = {
+        contact_name: "{&quot;id&quot;:&quot;contact_name&quot;,&quot;label&quot;:&quot;Contact Name&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;Full Name&quot;,&quot;error_msg&quot;:&quot;Contact name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        email: "{&quot;id&quot;:&quot;email&quot;,&quot;label&quot;:&quot;Email&quot;,&quot;required&quot;:true,&quot;error_msg&quot;:&quot;Email is required&quot;,&quot;validation_msg&quot;:&quot;Please enter a valid email address&quot;,&quot;type&quot;:&quot;email&quot;,&quot;half&quot;:true,&quot;placeholder&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        school: "{&quot;id&quot;:&quot;school&quot;,&quot;label&quot;:&quot;School&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;School is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        total_size: "{&quot;id&quot;:&quot;total_size&quot;,&quot;label&quot;:&quot;Total size of Group&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;(students &amp; chaperones)&quot;,&quot;error_msg&quot;:&quot;Group Size is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        grades: "{&quot;id&quot;:&quot;grades&quot;,&quot;label&quot;:&quot;Grade(s) of students&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Grade list is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        animated_action: "{&quot;id&quot;:&quot;animated_action&quot;,&quot;label&quot;:&quot;Do you want to attend the Animated or Live-Action program?&quot;,&quot;required&quot;:false,&quot;placeholder&quot;:&quot;--Pick One--&quot;,&quot;error_msg&quot;:&quot;Program Type is required&quot;,&quot;type&quot;:&quot;select&quot;,&quot;options&quot;:[&quot;Animated&quot;,&quot;Live-Action&quot;],&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        dates: "{&quot;id&quot;:&quot;dates&quot;,&quot;label&quot;:&quot;Desired date of trip&quot;,&quot;description&quot;:&quot;(or range of possible dates)&quot;,&quot;placeholder&quot;:&quot;(e.g. February 4, first week of March, etc.)&quot;,&quot;required&quot;:true,&quot;error_msg&quot;:&quot;This field is required&quot;,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;half&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false}",
+        start_time: "{&quot;id&quot;:&quot;start_time&quot;,&quot;label&quot;:&quot;Desired showtime (or time of day)&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;(e.g. 10:45am, between 1 and 3pm, etc.)&quot;,&quot;type&quot;:&quot;text&quot;,&quot;error_msg&quot;:&quot;This field is required&quot;,&quot;validation_msg&quot;:false,&quot;half&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        message: "{&quot;id&quot;:&quot;message&quot;,&quot;label&quot;:&quot;Additional comments&quot;,&quot;type&quot;:&quot;textarea&quot;,&quot;required&quot;:false,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;This field is required&quot;,&quot;validation_msg&quot;:false,&quot;half&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}"
+    };
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://www.ifccenter.com/wp-content/plugins/group-opt-in/assets/js/ifc-center-group-opt-in-shortcode.js?ver=0.1.0'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var ifc_center_hs_opt_in_fields = {
+        first_name: "{&quot;id&quot;:&quot;first_name&quot;,&quot;label&quot;:&quot;First Name&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;Full Name&quot;,&quot;error_msg&quot;:&quot;First name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        last_name: "{&quot;id&quot;:&quot;last_name&quot;,&quot;label&quot;:&quot;Last Name&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Last Name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        phone: "{&quot;id&quot;:&quot;phone&quot;,&quot;label&quot;:&quot;Phone&quot;,&quot;required&quot;:false,&quot;placeholder&quot;:&quot;XXX-XXX-XXXX&quot;,&quot;error_msg&quot;:&quot;Phone is required&quot;,&quot;validation_msg&quot;:&quot;Please enter a valid phone number&quot;,&quot;phoneUS&quot;:true,&quot;type&quot;:&quot;tel&quot;,&quot;half&quot;:true,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;description&quot;:false}",
+        email: "{&quot;id&quot;:&quot;email&quot;,&quot;label&quot;:&quot;Email&quot;,&quot;required&quot;:true,&quot;error_msg&quot;:&quot;Email is required&quot;,&quot;validation_msg&quot;:&quot;Please enter a valid email address&quot;,&quot;type&quot;:&quot;email&quot;,&quot;half&quot;:true,&quot;placeholder&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        mailing_one: "{&quot;id&quot;:&quot;mailing_one&quot;,&quot;label&quot;:&quot;Preferred Mailing Address&quot;,&quot;required&quot;:false,&quot;placeholder&quot;:&quot;Address Line 1&quot;,&quot;error_msg&quot;:&quot;Address is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        mailing_two: "{&quot;id&quot;:&quot;mailing_two&quot;,&quot;label&quot;:&quot;Address 2nd Line&quot;,&quot;required&quot;:false,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Address Line 2&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        city: "{&quot;id&quot;:&quot;city&quot;,&quot;label&quot;:&quot;City&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;City is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        state: "{&quot;id&quot;:&quot;state&quot;,&quot;label&quot;:&quot;State&quot;,&quot;required&quot;:false,&quot;placeholder&quot;:&quot;--State--&quot;,&quot;error_msg&quot;:&quot;State is required&quot;,&quot;type&quot;:&quot;select&quot;,&quot;options&quot;:[&quot;AL&quot;,&quot;AK&quot;,&quot;AS&quot;,&quot;AZ&quot;,&quot;AR&quot;,&quot;CA&quot;,&quot;CO&quot;,&quot;CT&quot;,&quot;DE&quot;,&quot;DC&quot;,&quot;FM&quot;,&quot;FL&quot;,&quot;GA&quot;,&quot;GU&quot;,&quot;HI&quot;,&quot;ID&quot;,&quot;IL&quot;,&quot;IN&quot;,&quot;IA&quot;,&quot;KS&quot;,&quot;KY&quot;,&quot;LA&quot;,&quot;ME&quot;,&quot;MH&quot;,&quot;MD&quot;,&quot;MA&quot;,&quot;MI&quot;,&quot;MN&quot;,&quot;MS&quot;,&quot;MO&quot;,&quot;MT&quot;,&quot;NE&quot;,&quot;NV&quot;,&quot;NH&quot;,&quot;NJ&quot;,&quot;NM&quot;,&quot;NY&quot;,&quot;NC&quot;,&quot;ND&quot;,&quot;MP&quot;,&quot;OH&quot;,&quot;OK&quot;,&quot;OR&quot;,&quot;PW&quot;,&quot;PA&quot;,&quot;PR&quot;,&quot;RI&quot;,&quot;SC&quot;,&quot;SD&quot;,&quot;TN&quot;,&quot;TX&quot;,&quot;UT&quot;,&quot;VT&quot;,&quot;VI&quot;,&quot;VA&quot;,&quot;WA&quot;,&quot;WV&quot;,&quot;WI&quot;,&quot;WY&quot;,&quot;AE&quot;,&quot;AA&quot;,&quot;AP&quot;],&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        zip_code: "{&quot;id&quot;:&quot;zip_code&quot;,&quot;label&quot;:&quot;Zip Code&quot;,&quot;required&quot;:false,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Last Name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        school: "{&quot;id&quot;:&quot;school&quot;,&quot;label&quot;:&quot;School&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;School Name&quot;,&quot;error_msg&quot;:&quot;School Name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        current_grade: "{&quot;id&quot;:&quot;current_grade&quot;,&quot;label&quot;:&quot;Current Grade&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Grade Level is required&quot;,&quot;half&quot;:false,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}"
+    };
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://www.ifccenter.com/wp-content/plugins/high-school-opt-in/assets/js/ifc-center-hs-opt-in-shortcode.js?ver=0.1.0'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var ifc_center_event_form_fields = {
+        contact_name: "{&quot;id&quot;:&quot;contact_name&quot;,&quot;label&quot;:&quot;Contact Name&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;Full Name&quot;,&quot;error_msg&quot;:&quot;Contact name is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        company: "{&quot;id&quot;:&quot;company&quot;,&quot;label&quot;:&quot;Company&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;Company is required&quot;,&quot;half&quot;:true,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        phone: "{&quot;id&quot;:&quot;phone&quot;,&quot;label&quot;:&quot;Phone&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;XXX-XXX-XXXX&quot;,&quot;error_msg&quot;:&quot;Phone is required&quot;,&quot;validation_msg&quot;:&quot;Please enter a valid phone number&quot;,&quot;phoneUS&quot;:true,&quot;type&quot;:&quot;tel&quot;,&quot;half&quot;:true,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;description&quot;:false}",
+        email: "{&quot;id&quot;:&quot;email&quot;,&quot;label&quot;:&quot;Email&quot;,&quot;required&quot;:true,&quot;error_msg&quot;:&quot;Email is required&quot;,&quot;validation_msg&quot;:&quot;Please enter a valid email address&quot;,&quot;type&quot;:&quot;email&quot;,&quot;half&quot;:true,&quot;placeholder&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        dates: "{&quot;id&quot;:&quot;dates&quot;,&quot;label&quot;:&quot;Date(s) requested, or general timeframe&quot;,&quot;description&quot;:&quot;(please note that IFC Center is generally not available for rentals Fridays-Sundays)&quot;,&quot;placeholder&quot;:&quot;(e.g. August 23, 2015; 3 consecutive nights in September 2015; etc.)&quot;,&quot;required&quot;:true,&quot;error_msg&quot;:&quot;This field is required&quot;,&quot;validation_msg&quot;:false,&quot;type&quot;:&quot;text&quot;,&quot;half&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false}",
+        start_time: "{&quot;id&quot;:&quot;start_time&quot;,&quot;label&quot;:&quot;Start time of event&quot;,&quot;required&quot;:true,&quot;description&quot;:&quot;(including access for any in-theater set-up)&quot;,&quot;placeholder&quot;:&quot;(e.g. 2pm, evening, etc.)&quot;,&quot;type&quot;:&quot;text&quot;,&quot;error_msg&quot;:&quot;This field is required&quot;,&quot;validation_msg&quot;:false,&quot;half&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false}",
+        duration: "{&quot;id&quot;:&quot;duration&quot;,&quot;label&quot;:&quot;Total duration of event&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:&quot;(e.g. 4 hours, 1 week, 5 hours of 2 consecutive evenings, etc.)&quot;,&quot;type&quot;:&quot;text&quot;,&quot;error_msg&quot;:&quot;This field is required&quot;,&quot;validation_msg&quot;:false,&quot;half&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        desired_theaters: "{&quot;id&quot;:&quot;desired_theaters&quot;,&quot;label&quot;:&quot;Capacity theater desired - check all that apply &quot;,&quot;required&quot;:true,&quot;type&quot;:&quot;multi_check&quot;,&quot;error_msg&quot;:&quot;Please select at least one theater&quot;,&quot;options&quot;:{&quot;205&quot;:&quot;205&quot;,&quot;114&quot;:&quot;114&quot;,&quot;60&quot;:&quot;60&quot;,&quot;35&quot;:&quot;35&quot;},&quot;placeholder&quot;:false,&quot;validation_msg&quot;:false,&quot;half&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false,&quot;description&quot;:false}",
+        message: "{&quot;id&quot;:&quot;message&quot;,&quot;label&quot;:&quot;Description of event and any additional questions&quot;,&quot;description&quot;:&quot;(please include film title if applicable)&quot;,&quot;type&quot;:&quot;textarea&quot;,&quot;required&quot;:true,&quot;placeholder&quot;:false,&quot;error_msg&quot;:&quot;This field is required&quot;,&quot;validation_msg&quot;:false,&quot;half&quot;:false,&quot;conditional&quot;:false,&quot;date_time&quot;:false,&quot;zipcodeUS&quot;:false,&quot;phoneUS&quot;:false}"
+    };
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://www.ifccenter.com/wp-content/plugins/ifc-center-event-form-shortcode/assets/js/ifc-center-event-form-shortcode.js?ver=0.1.0'></script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using memcached
+Page Caching using memcached
+Database Caching 47/61 queries in 0.490 seconds using memcached
+Object Caching 934/954 objects using memcached
+
+ Served from: www.ifccenter.com @ 2016-05-08 19:52:29 by W3 Total Cache -->

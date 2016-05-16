@@ -10,20 +10,10 @@ import com.twitter.finatra.httpclient.modules.HttpClientModule
 import com.twitter.finatra.utils.FuturePools
 import org.joda.time.DateTime
 
-class HelloWorldController @Inject()(httpClient: HttpClient) extends Controller {
+class AdminController @Inject()(httpClient: HttpClient) extends Controller {
 
-  val date = DateTime.now
-
-  FuturePools.unboundedPool("yo")
-
-  get("/hi")((request: Request) => {
-    info("hi")
-    "Hello " + request.params.getOrElse("name", "unnamed") + date
-  })
-
+  // NOTE(aaron): Use a wildcard in order to avoid being catalogued as an admin route in HttpRouter.partitionRoutesByType.
   get("/admi:*") { request: Request =>
-    //    val r = Request.apply(request.)
-    //    r.accept_=("*/*")
     httpClient.execute(request)
   }
 }

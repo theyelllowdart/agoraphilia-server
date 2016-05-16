@@ -1,7 +1,8 @@
 import com.typesafe.sbt.SbtNativePackager._
+import info.pdalpra.jooq.util.sbt.model._
 
 packageArchetype.java_application
-name := "hello-world"
+name := "agoraphilia-server"
 organization := "com.twitter.finatra.example"
 version := "2.1.4"
 scalaVersion := "2.11.7"
@@ -48,4 +49,27 @@ libraryDependencies ++= Seq(
 
   "org.mockito" % "mockito-core" % "1.9.5" % "test",
   "org.scalatest" %% "scalatest" % "2.2.3" % "test",
-  "org.specs2" %% "specs2" % "2.3.12" % "test")
+  "org.specs2" %% "specs2" % "2.3.12" % "test",
+
+  "net.ruippeixotog" % "scala-scraper_2.11" % "1.0.0",
+  "joda-time" % "joda-time" % "2.9.3",
+  "org.scalaj" % "scalaj-http_2.11" % "2.3.0",
+  "com.google.apis" % "google-api-services-youtube" % "v3-rev171-1.21.0",
+  "postgresql" % "postgresql" % "9.1-901-1.jdbc4",
+  "org.jooq" % "jooq" % "3.8.1",
+  "org.jooq" % "jooq-meta" % "3.8.1",
+  "org.jooq" % "jooq-scala" % "3.8.1",
+  "org.jooq" % "jooq-codegen" % "3.8.1"
+)
+
+val generateJOOQ = taskKey[Seq[File]]("Generate JooQ classes")
+
+val generateJOOQTask = (sourceManaged, fullClasspath in Compile, runner in Compile, streams) map { (src, cp, r, s) =>
+  toError(r.run("org.jooq.util.GenerationTool", cp.files, Array("conf/db.xml"), s.log))
+  ((src / "main/com/agoraphilia/model/gen") ** "*.scala").get
+}
+
+generateJOOQ <<= generateJOOQTask
+
+
+unmanagedSourceDirectories in Compile += sourceManaged.value / "main/com/agoraphilia/model/gen"

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.7.0.xsd">
+    <jdbc>
+        <driver>org.postgresql.Driver</driver>
+        <url>jdbc:postgresql://localhost:5432/agoraphilia</url>
+        <user>postgres</user>
+        <password>consensus</password>
+    </jdbc>
+    <generator>
+        <name>org.jooq.util.ScalaGenerator</name>
+        <database>
+            <name>org.jooq.util.postgres.PostgresDatabase</name>
+            <inputSchema>public</inputSchema>
+            <includes>.*</includes>
+            <excludes></excludes>
+        </database>
+        <target>
+            <packageName>com.agoraphilia.model.gen</packageName>
+            <directory>target/scala-2.11/src_managed/main/</directory>
+        </target>
+    </generator>
+</configuration>
